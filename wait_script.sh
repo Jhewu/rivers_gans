@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the PID manually within the script
-PID=1148601  # Replace 105041 with the actual PID you want to wait for
+PID=110932  # Replace 105041 with the actual PID you want to wait for
 
 # Function to check if a process with a given PID is running
 is_process_running() {
@@ -19,7 +19,7 @@ echo "The process with PID $PID has completed."
 echo "Executing the next command..."
 
 # Run a command in the background (e.g., sleep for 100 seconds)
-python3 chicken.py &
+python3 gan.py &
 
 # Capture the PID of the background process
 PID=$!
